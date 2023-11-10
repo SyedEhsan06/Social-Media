@@ -1,0 +1,7 @@
+.rings{
+    background:linear-gradient(yellow,orange,red,pink);
+    padding: 2px;
+}
+.ringCom::-webkit-scrollbar{
+    display: hidden;
+}
