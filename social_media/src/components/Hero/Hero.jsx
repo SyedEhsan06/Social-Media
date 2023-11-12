@@ -10,7 +10,7 @@ import Feed from "../Feed/Feed";
 const Hero = () => {
   return (
     <>
-      <div className="w-full h-[100vh] flex bg-black overflow-hidden">
+      <div className="w-full h-[100vh] flex bg-black overflow-hidden selection:bg-transparent">
         <div className="sidebar rounded-xl w-1/5">
           <Sidebar />
         </div>
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
       </div>
     </>
-  );
+  );  
 };
 
 export default Hero;

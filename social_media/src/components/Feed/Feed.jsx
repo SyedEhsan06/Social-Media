@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Import motion from framer-motion
 import Card from '../Card/Card';
 import m1 from '../../assets/monsterIMG/m1.png';
 import m2 from '../../assets/monsterIMG/m2.png';
@@ -20,11 +19,6 @@ const imagePaths = [
 ];
 
 const Feed = () => {
-  const cardVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 1.5 }, staggerChildren: 0.5 },
-  };
-
   return (
     <div className="w-full h-full">
       <div className="flex container flex-col h-full">
@@ -32,16 +26,11 @@ const Feed = () => {
           <h1 className="text-lg font-semibold bg-transparent p-2 rounded-md opacity-75 text-white">Feed</h1>
         </div>
         <div className="mainfeed w-full h-full">
-          <motion.div
-            className="card container flex justify-center gap-8 flex-row flex-wrap"
-            initial="hidden"
-            animate="visible"
-            variants={cardVariants}
-          >
+          <div className="card container flex justify-center gap-8 flex-row flex-wrap">
             {imagePaths.map((imagePath, index) => (
               <Card key={index} imagePath={imagePath} />
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

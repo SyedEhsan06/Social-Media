@@ -46,7 +46,7 @@ const Storybar = () => {
               <div className="rings ml-2  w-16 h-16 rounded-full inline-block hover:scale-110 transition-all ease-linear duration-150 active:scale-95 hover:animate-pulse" key={index}>
                 <img src={imagePath} alt={`Story ${index}`} className="w-full h-full bg-black object-contain rounded-full" />
               </div>
-            ))}
+            ))}a
           </div>
         </div>
       </div>
